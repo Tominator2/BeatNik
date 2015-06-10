@@ -1,10 +1,10 @@
 # BeatNik
 
-Beatnik is a tool I wrote back in 2008 to convert data from an Electrocardiogram (ECG) file into Comma Separated Value (CSV) format for a friend who was a cardiologist.  It extracts data from the three leads (channels) and an example graph in Excel made from Beatnik's output is shown below. 
+Beatnik is a tool I wrote back in 2008 to convert data in a file from an Electrocardiogram (ECG) machine into Comma Separated Value (CSV) format for a friend who was a cardiologist.  It extracts data from the three leads (channels) and an example graph in Excel made from Beatnik's output is shown below. 
 
 ![output-example-reduced](https://cloud.githubusercontent.com/assets/4344677/7978205/11de92ce-0abd-11e5-94bd-fd6078e30120.png)
 
-From the first few bytes of a sample file with a '.raw' extension I was able to determine that the file was a Waveform Database (WFDB) signal file in [Format 16](http://www.physionet.org/physiotools/wag/signal-5.htm#sect3) where the amplitude for each sample is represented by a 16-bit two’s complement stored least significant byte first. A screenshot of Beatnik's user interface is shown below.
+My friend had an output file with a '.raw' extension from the ECG machine. From the first few bytes of the file I was able to determine that the file was a Waveform Database (WFDB) signal file in [Format 16](http://www.physionet.org/physiotools/wag/signal-5.htm#sect3) where the amplitude for each sample is represented by a 16-bit two’s complement integer stored least significant byte first. A screenshot of Beatnik's user interface is shown below.
 
 ![beatnik - screenshot2](https://cloud.githubusercontent.com/assets/4344677/7978207/11e961a4-0abd-11e5-9813-659830567bb2.png)
 
